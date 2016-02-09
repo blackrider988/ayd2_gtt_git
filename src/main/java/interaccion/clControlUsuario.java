@@ -13,9 +13,9 @@ import java.util.ArrayList;
 public class clControlUsuario {
     
     public String funAutenticacion(String parNombre, String parContrasenia){
-        
+        //comentario
         if(parNombre.equalsIgnoreCase("mario"))
-        
+        {
             return "Mario Asencio";
         }
         else
