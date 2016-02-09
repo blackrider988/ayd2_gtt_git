@@ -15,7 +15,7 @@ public class clControlUsuario {
     public String funAutenticacion(String parNombre, String parContrasenia){
         
         if(parNombre.equalsIgnoreCase("mario"))
-        
+        {
             return "Mario Asencio";
         }
         else
