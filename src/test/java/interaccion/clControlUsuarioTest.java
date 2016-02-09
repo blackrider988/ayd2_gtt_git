@@ -46,7 +46,7 @@ public class clControlUsuarioTest {
         String parNombre = "mario";
         String parContrasenia = "app";
         clControlUsuario instance = new clControlUsuario();
-        String expResult = "calificacion";
+        String expResult = "mario";
         String result = instance.funAutenticacion(parNombre, parContrasenia);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
