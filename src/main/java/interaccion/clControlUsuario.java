@@ -15,7 +15,7 @@ public class clControlUsuario {
     public String funAutenticacion(String parNombre, String parContrasenia){
         //comentario
         if(parNombre!="" && parContrasenia!="")
-        
+        {
             return parNombre;
         }
         else
