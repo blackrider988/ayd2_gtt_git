@@ -52,6 +52,11 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
+        	<groupId>org.codehaus.sonar</groupId>
+        	<artifactId>sonar-batch</artifactId>
+        	<version>5.1</version>
+        </dependency>
+        <dependency>
         	<groupId>org.codehaus.mojo</groupId>
         	<artifactId>sonar-maven-plugin</artifactId>
         	<version>3.0.1</version>
