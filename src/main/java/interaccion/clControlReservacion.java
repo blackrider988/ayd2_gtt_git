@@ -9,6 +9,6 @@ package interaccion;
  *
  * @author mario
  */
-public class ClControlReservacion {
+public class clControlReservacion {
     
 }
