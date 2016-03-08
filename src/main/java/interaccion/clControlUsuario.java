@@ -49,8 +49,15 @@ public class clControlUsuario {
             sesion.save(u);
             tx.commit();
         
+        if(true)
+        {
+            return "creado";
+        }
+        else
+        {
+            return "creado";
+        }
         
-        return "creado";
     }
     
 }
