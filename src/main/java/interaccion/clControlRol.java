@@ -11,7 +11,6 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import pojos.Rol;
-import pojos.Usuario;
 
 /**
  *
@@ -20,15 +19,15 @@ import pojos.Usuario;
 public class clControlRol {
     
     public List<Rol> funObtenerRoles(){
-        List<Rol> vl_lista = new ArrayList<Rol>();
+        List<Rol> vllista = new ArrayList<Rol>();
         SessionFactory sf = HibernateUtil.getSessionFactory();        
         Session sesion = sf.openSession();
         
         Query q = sesion.createQuery("from Rol");
         
-        vl_lista = (List<Rol>) q.list();
+        vllista = (List<Rol>) q.list();
         
-        return vl_lista;
+        return vllista;
     }
     
     
