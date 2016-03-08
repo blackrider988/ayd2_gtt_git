@@ -1,0 +1,9 @@
+pojos\Reservacion.class
+interaccion\HibernateUtil.class
+pojos\Viaje.class
+interaccion\clControlUsuario.class
+pojos\Rol.class
+pojos\Usuario.class
+interaccion\clControlRol.class
+interaccion\clControlViaje.class
+interaccion\clControlReservacion.class
