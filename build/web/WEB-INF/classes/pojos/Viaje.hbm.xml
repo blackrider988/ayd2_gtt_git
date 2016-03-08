@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 04-mar-2016 23:09:35 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojos.Viaje" table="viaje" catalog="gtt" optimistic-lock="version">
+        <id name="idViaje" type="java.lang.Integer">
+            <column name="id_viaje" />
+            <generator class="identity" />
+        </id>
+        <property name="nombreViaje" type="string">
+            <column name="nombre_viaje" length="45" />
+        </property>
+        <property name="descripcionViaje" type="string">
+            <column name="descripcion_viaje" length="45" />
+        </property>
+        <one-to-one name="reservacion" class="pojos.Reservacion"></one-to-one>
+    </class>
+</hibernate-mapping>

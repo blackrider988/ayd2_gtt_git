@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 04-mar-2016 23:09:35 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojos.Rol" table="Rol" catalog="gtt" optimistic-lock="version">
+        <id name="idRol" type="java.lang.Integer">
+            <column name="id_rol" />
+            <generator class="identity" />
+        </id>
+        <property name="nombreRol" type="string">
+            <column name="nombre_rol" length="45" />
+        </property>
+        <property name="descripcionRol" type="string">
+            <column name="descripcion_rol" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>
