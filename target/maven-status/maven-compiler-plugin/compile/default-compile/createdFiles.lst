@@ -6,4 +6,5 @@ pojos\Rol.class
 pojos\Usuario.class
 interaccion\clControlRol.class
 interaccion\clControlViaje.class
+.netbeans_automatic_build
 interaccion\clControlReservacion.class
