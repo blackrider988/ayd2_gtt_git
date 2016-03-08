@@ -19,15 +19,15 @@ import pojos.Viaje;
 public class clControlViaje {
     
     public List<Viaje> funObtenerViajes(){
-        List<Viaje> vl_lista = new ArrayList<Viaje>();
+        List<Viaje> vllista = new ArrayList<Viaje>();
         SessionFactory sf = HibernateUtil.getSessionFactory();        
         Session sesion = sf.openSession();
         
         Query q = sesion.createQuery("from Viaje");
         
-        vl_lista = (List<Viaje>) q.list();
+        vllista = (List<Viaje>) q.list();
         
-        return vl_lista;
+        return vllista;
     }
     
 }
