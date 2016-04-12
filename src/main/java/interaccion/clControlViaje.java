@@ -10,7 +10,7 @@ import java.util.List;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import pojos.Viaje;
+import pojos.TblViaje;
 
 /**
  *
@@ -18,16 +18,16 @@ import pojos.Viaje;
  */
 public class clControlViaje {
     
-    public List<Viaje> funObtenerViajes(){
-        List<Viaje> vllista = new ArrayList<Viaje>();
+    public List<TblViaje> funObtenerViajes(){
+        List<TblViaje> vl_lista = new ArrayList<TblViaje>();
         SessionFactory sf = HibernateUtil.getSessionFactory();        
         Session sesion = sf.openSession();
         
-        Query q = sesion.createQuery("from Viaje");
+        Query q = sesion.createQuery("from TblViaje");
         
-        vllista = (List<Viaje>) q.list();
+        vl_lista = (List<TblViaje>) q.list();
         
-        return vllista;
+        return vl_lista;
     }
     
 }

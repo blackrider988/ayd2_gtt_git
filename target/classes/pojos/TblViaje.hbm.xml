@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 10-abr-2016 21:48:05 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojos.TblViaje" table="tbl_Viaje" catalog="gttdb" optimistic-lock="version">
+        <id name="idViaje" type="java.lang.Integer">
+            <column name="id_viaje" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="tblDestino" class="pojos.TblDestino" fetch="select">
+            <column name="id_destino" />
+        </many-to-one>
+        <many-to-one name="tblTransporte" class="pojos.TblTransporte" fetch="select">
+            <column name="id_transporte" />
+        </many-to-one>
+        <property name="nombreViaje" type="string">
+            <column name="nombre_viaje" length="100" not-null="true" />
+        </property>
+        <property name="fechaInicio" type="date">
+            <column name="fecha_inicio" length="10" not-null="true" />
+        </property>
+        <property name="fechaFin" type="date">
+            <column name="fecha_fin" length="10" not-null="true" />
+        </property>
+        <set name="tblReservacions" table="tbl_Reservacion" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="id_viaje" not-null="true" />
+            </key>
+            <one-to-many class="pojos.TblReservacion" />
+        </set>
+        <set name="tblImagens" table="tbl_Imagen" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="id_viaje" />
+            </key>
+            <one-to-many class="pojos.TblImagen" />
+        </set>
+    </class>
+</hibernate-mapping>

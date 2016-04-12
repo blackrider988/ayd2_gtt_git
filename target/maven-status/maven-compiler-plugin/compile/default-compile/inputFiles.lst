@@ -1,9 +1,16 @@
-C:\Users\BlackRider\Documents\GitHub\ayd2_gtt_git\src\main\java\interaccion\clControlUsuario.java
-C:\Users\BlackRider\Documents\GitHub\ayd2_gtt_git\src\main\java\interaccion\clControlRol.java
-C:\Users\BlackRider\Documents\GitHub\ayd2_gtt_git\src\main\java\pojos\Usuario.java
-C:\Users\BlackRider\Documents\GitHub\ayd2_gtt_git\src\main\java\pojos\Viaje.java
-C:\Users\BlackRider\Documents\GitHub\ayd2_gtt_git\src\main\java\pojos\Rol.java
-C:\Users\BlackRider\Documents\GitHub\ayd2_gtt_git\src\main\java\pojos\Reservacion.java
-C:\Users\BlackRider\Documents\GitHub\ayd2_gtt_git\src\main\java\interaccion\clControlViaje.java
-C:\Users\BlackRider\Documents\GitHub\ayd2_gtt_git\src\main\java\interaccion\clControlReservacion.java
-C:\Users\BlackRider\Documents\GitHub\ayd2_gtt_git\src\main\java\interaccion\HibernateUtil.java
+D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\pojos\TblTransporte.java
+D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\pojos\TblViaje.java
+D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\interaccion\HibernateUtil.java
+D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\interaccion\clControlViaje.java
+D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\interaccion\clControlRol.java
+D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\pojos\TblActividadDestinoId.java
+D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\pojos\TblActividad.java
+D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\pojos\TblUsuario.java
+D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\pojos\TblDestino.java
+D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\pojos\TblActividadDestino.java
+D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\pojos\TblReservacion.java
+D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\pojos\TblImagen.java
+D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\pojos\TblRol.java
+D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\interaccion\clControlUsuario.java
+D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\pojos\TblRuta.java
+D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\interaccion\clControlDetalleViaje.java

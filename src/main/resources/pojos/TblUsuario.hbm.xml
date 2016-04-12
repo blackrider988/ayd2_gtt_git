@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 10-abr-2016 21:48:05 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojos.TblUsuario" table="tbl_Usuario" catalog="gttdb" optimistic-lock="version">
+        <id name="idUsuario" type="java.lang.Integer">
+            <column name="id_usuario" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="tblRol" class="pojos.TblRol" fetch="select">
+            <column name="id_rol" not-null="true" />
+        </many-to-one>
+        <property name="nombreUsuario" type="string">
+            <column name="nombre_usuario" length="45" not-null="true" unique="true" />
+        </property>
+        <property name="contrasenia" type="string">
+            <column name="contrasenia" length="45" not-null="true" />
+        </property>
+        <property name="primerNombre" type="string">
+            <column name="primer_nombre" length="45" not-null="true" />
+        </property>
+        <property name="primerApellido" type="string">
+            <column name="primer_apellido" length="45" not-null="true" />
+        </property>
+        <property name="correoElectronico" type="string">
+            <column name="correo_electronico" length="45" not-null="true" />
+        </property>
+        <set name="tblReservacions" table="tbl_Reservacion" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="id_usuario" not-null="true" />
+            </key>
+            <one-to-many class="pojos.TblReservacion" />
+        </set>
+    </class>
+</hibernate-mapping>

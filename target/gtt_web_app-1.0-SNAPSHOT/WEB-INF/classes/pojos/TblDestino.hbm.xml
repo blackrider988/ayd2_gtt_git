@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 10-abr-2016 21:48:05 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojos.TblDestino" table="tbl_Destino" catalog="gttdb" optimistic-lock="version">
+        <id name="idDestino" type="java.lang.Integer">
+            <column name="id_destino" />
+            <generator class="identity" />
+        </id>
+        <property name="nombreDestino" type="string">
+            <column name="nombre_destino" length="45" not-null="true" />
+        </property>
+        <property name="descripcionDestino" type="string">
+            <column name="descripcion_destino" length="250" />
+        </property>
+        <set name="tblViajes" table="tbl_Viaje" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="id_destino" />
+            </key>
+            <one-to-many class="pojos.TblViaje" />
+        </set>
+        <set name="tblActividadDestinos" table="tbl_Actividad_Destino" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="id_destino" not-null="true" />
+            </key>
+            <one-to-many class="pojos.TblActividadDestino" />
+        </set>
+    </class>
+</hibernate-mapping>

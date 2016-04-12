@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 10-abr-2016 21:48:05 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojos.TblActividadDestino" table="tbl_Actividad_Destino" catalog="gttdb" optimistic-lock="version">
+        <composite-id name="id" class="pojos.TblActividadDestinoId">
+            <key-property name="idActividad" type="int">
+                <column name="id_actividad" />
+            </key-property>
+            <key-property name="idDestino" type="int">
+                <column name="id_destino" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="tblActividad" class="pojos.TblActividad" update="false" insert="false" fetch="select">
+            <column name="id_actividad" not-null="true" />
+        </many-to-one>
+        <many-to-one name="tblDestino" class="pojos.TblDestino" update="false" insert="false" fetch="select">
+            <column name="id_destino" not-null="true" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

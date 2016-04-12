@@ -1,6 +1,6 @@
 package interaccion;
 
-import pojos.Usuario;
+import pojos.TblUsuario;
 import org.hibernate.SessionFactory;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -11,22 +11,24 @@ import java.util.ArrayList;
 
 public class clControlUsuario {
     
-    public String funAutenticacion(String parNombre, String parContrasenia){
-        List<Usuario> vl_lista = new ArrayList<Usuario>();
+    public List<TblUsuario> funAutenticacion(String parNombre, String parContrasenia){
+        List<TblUsuario> vl_lista = new ArrayList<TblUsuario>();
         SessionFactory sf = HibernateUtil.getSessionFactory();        
         Session sesion = sf.openSession();
-        Query q = sesion.createQuery("from Usuario usr \n" + 
+        Query q = sesion.createQuery("from TblUsuario usr \n" + 
                                     "where usr.contrasenia = '"+ parContrasenia+"' \n" +
                                     "and usr.nombreUsuario = '" + parNombre +"'");
         
-       vl_lista = (List<Usuario>) q.list();
+       vl_lista = (List<TblUsuario>) q.list();
        
-       if(vl_lista.size() > 0 && vl_lista.size() < 2){
+       /*if(vl_lista.size() > 0 && vl_lista.size() < 2){
            String vsNombreCompleto = vl_lista.get(0).getPrimerNombre() + " " + vl_lista.get(0).getPrimerApellido();
            return vsNombreCompleto;
        }else{
            return "Error";
-       }
+       }*/
+       
+       return vl_lista;
        
     }
     
@@ -39,7 +41,7 @@ public class clControlUsuario {
             
             tx = sesion.beginTransaction();
         
-            Usuario u = new Usuario();
+            TblUsuario u = new TblUsuario();
             u.setNombreUsuario(parNombre);
             u.setContrasenia(parPass);
             u.setPrimerNombre(parPrimNombre);
@@ -49,15 +51,8 @@ public class clControlUsuario {
             sesion.save(u);
             tx.commit();
         
-        if(true)
-        {
-            return "creado";
-        }
-        else
-        {
-            return "creado";
-        }
         
+        return "creado";
     }
     
 }

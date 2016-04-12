@@ -10,7 +10,7 @@ import java.util.List;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import pojos.Rol;
+import pojos.TblRol;
 
 /**
  *
@@ -18,17 +18,23 @@ import pojos.Rol;
  */
 public class clControlRol {
     
-    public List<Rol> funObtenerRoles(){
-        List<Rol> vllista = new ArrayList<Rol>();
+    public List<TblRol> funListaRoles(){
+        List<TblRol> vl_lista = new ArrayList<TblRol>();
         SessionFactory sf = HibernateUtil.getSessionFactory();        
         Session sesion = sf.openSession();
         
-        Query q = sesion.createQuery("from Rol");
+        Query q = sesion.createQuery("from TblRol");
         
-        vllista = (List<Rol>) q.list();
+        vl_lista = (List<TblRol>) q.list();
         
-        return vllista;
+        return vl_lista;
     }
     
+
+    public int funObtenerRol(){
+        int rol = 0;
+        
+        return rol;
+    }
     
 }
