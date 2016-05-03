@@ -12,6 +12,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            th, td {
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even){background-color: #f2f2f2}
+        </style>
         <link rel="stylesheet" type="text/css" href="style.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Viajes</title>
@@ -20,14 +33,20 @@
         <div id='cssmenu'>
         <ul>
            <li class='active'><a href='#'><span>Home</span></a></li>
-           <li><a href='ver_viajes.jsp'><span>Reservaciones</span></a></li>
            <li><a href='#'><span>Historial</span></a></li>
            <li><a href='pg_catalogo_viajes.jsp'><span>Viajes</span></a></li>
            <li><a href='ver_roles.jsp'><span>Rol</span></a></li>
-           <li><a href='#'><span>Acerca de</span></a></li>
-           <li class='last'><a href='#'><span>Contacto</span></a></li>
+           <li><a href='#'><span>Clientes</span></a></li>
         </ul>
         </div>
+        
+        <h2>Busqueda personalizada</h2>
+        
+        <form class="login-container" action="pg_busqueda.jsp" method="GET">
+            <p>Buesqueda: <input type="text" placeholder="Buscar vuaje" name="busqueda_viaje"></p>
+            <p><input type="submit" value="Buscar"></p>
+        </form>
+        
         
         <%
             clControlViaje cr = new clControlViaje();
@@ -38,12 +57,12 @@
         %>
         
         
-        <table border = 1 style="width:100%">
+        <table>
             <tr>
-              <td>Nombre</td> 
-              <td>Fecha Inicio</td>
-              <td>Fecha Fin</td>
-              <td>Detalle</td>
+              <th>Nombre</td> 
+              <th>Fecha Inicio</td>
+              <th>Fecha Fin</td>
+              <th>Detalle</td>
             </tr>
             
             <%
@@ -67,12 +86,9 @@
             %>
         </table>
         
-        <h2>Realizar busqueda personalizada</h2>
         
-        <form class="login-container" action="pg_busqueda.jsp" method="GET">
-            <p>Buesqueda: <input type="text" placeholder="Buscar vuaje" name="busqueda_viaje"></p>
-            <p><input type="submit" value="Buscar"></p>
-        </form>
+        <h2>Crear viaje</h2>
+        <a href="pg_crear_viaje.jsp">Crear un viaje</a>
         
     </body>
 </html>

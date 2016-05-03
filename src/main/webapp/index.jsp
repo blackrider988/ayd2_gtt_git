@@ -24,7 +24,7 @@
     <p><input type="text" placeholder="Usuario" name="usr_name"></p>
     <p><input type="password" placeholder="Password" name="usr_pass"></p>
     <p><input type="submit" value="Log in"></p>
-    <p><a href="crear_usuario.jsp">Eres un nuevo usuario?</a></p>
+    <p><a href="pg_crear_usuario.jsp">Eres un nuevo usuario?</a></p>
   </form>
 </div>
         

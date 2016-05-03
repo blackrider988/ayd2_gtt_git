@@ -19,18 +19,20 @@
         <div id='cssmenu'>
         <ul>
            <li class='active'><a href='#'><span>Home</span></a></li>
-           <li><a href='ver_viajes.jsp'><span>Reservaciones</span></a></li>
            <li><a href='#'><span>Historial</span></a></li>
            <li><a href='pg_catalogo_viajes.jsp'><span>Viajes</span></a></li>
            <li><a href='ver_roles.jsp'><span>Rol</span></a></li>
            <li><a href='#'><span>Acerca de</span></a></li>
-           <li class='last'><a href='#'><span>Contacto</span></a></li>
         </ul>
         </div>
         
         <%
             String vsNombre = request.getParameter("detalle");
             int id_viaje = Integer.parseInt(vsNombre);
+            
+            session.removeAttribute("atrViaje"); 
+            session.setAttribute("atrViaje",id_viaje);
+            
             
             clControlDetalleViaje cl = new clControlDetalleViaje();
             
@@ -48,6 +50,12 @@
             String detalle = cl.funDetalleViaje(id_viaje);
             out.print(detalle);
         %>
+        
+        <h3>Reservar</h3>
+        
+        <form action="pg_reservacion.jsp">
+            <input type="submit" value="Reservar">
+        </form>
         
         
         
