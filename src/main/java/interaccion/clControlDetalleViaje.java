@@ -42,7 +42,7 @@ public class clControlDetalleViaje {
     }
     
     public String funDetalleViaje(int idviaje){
-        System.out.println("DETALLE DEL VIAJE");
+        //System.out.println("DETALLE DEL VIAJE");
         SessionFactory sf = HibernateUtil.getSessionFactory();        
         Session sesion = sf.openSession();
         List<TblViaje> vl_lista = new ArrayList<TblViaje>();
