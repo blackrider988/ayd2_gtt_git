@@ -30,18 +30,25 @@
         
         <%
             String vsNombre = request.getParameter("detalle");
-            int id = Integer.parseInt(vsNombre);
+            int id_viaje = Integer.parseInt(vsNombre);
             
             clControlDetalleViaje cl = new clControlDetalleViaje();
             
             List<String> lista_imagenes = new ArrayList<String>();
-            lista_imagenes = cl.funObtenerImagenes(id);
+            lista_imagenes = cl.funObtenerImagenes(id_viaje);
             
             for(int i = 0;i<lista_imagenes.size();i++){
                 out.print("<img src=\"imgs/" + lista_imagenes.get(i) + "\" alt=\"" + lista_imagenes.get(i) + "\" height=\"400\" width=\"400\">");
                 
             }
         %>
+        
+        <h3>Detalle viaje</h3>
+        <%
+            String detalle = cl.funDetalleViaje(id_viaje);
+            out.print(detalle);
+        %>
+        
         
         
     </body>

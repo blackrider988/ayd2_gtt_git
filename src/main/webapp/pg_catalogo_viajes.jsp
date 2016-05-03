@@ -67,5 +67,12 @@
             %>
         </table>
         
+        <h2>Realizar busqueda personalizada</h2>
+        
+        <form class="login-container" action="pg_busqueda.jsp" method="GET">
+            <p>Buesqueda: <input type="text" placeholder="Buscar vuaje" name="busqueda_viaje"></p>
+            <p><input type="submit" value="Buscar"></p>
+        </form>
+        
     </body>
 </html>

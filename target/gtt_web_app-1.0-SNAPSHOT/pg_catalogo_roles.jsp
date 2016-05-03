@@ -54,5 +54,10 @@
         %>
         </table>
         
+        
+        <h3>Crear un nuevo Rol</h3>
+        
+        <p><a href="pg_crear_rol.jsp">Crear un nuevo Rol</a></p>
+        
     </body>
 </html>

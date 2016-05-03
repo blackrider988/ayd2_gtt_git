@@ -1,16 +1,17 @@
-D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\pojos\TblTransporte.java
-D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\pojos\TblViaje.java
-D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\interaccion\HibernateUtil.java
-D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\interaccion\clControlViaje.java
-D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\interaccion\clControlRol.java
-D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\pojos\TblActividadDestinoId.java
-D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\pojos\TblActividad.java
-D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\pojos\TblUsuario.java
-D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\pojos\TblDestino.java
-D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\pojos\TblActividadDestino.java
-D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\pojos\TblReservacion.java
-D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\pojos\TblImagen.java
-D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\pojos\TblRol.java
-D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\interaccion\clControlUsuario.java
-D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\pojos\TblRuta.java
-D:\Mis Documentos\jr\2016\S01\SEM\AyD2\Clase\Fase3\gtt_web_app\gtt_web_app\src\main\java\interaccion\clControlDetalleViaje.java
+C:\Users\BlackRider\Documents\GitHub\ayd2_gtt_git\src\main\java\interaccion\clControlUsuario.java
+C:\Users\BlackRider\Documents\GitHub\ayd2_gtt_git\src\main\java\interaccion\clControlRol.java
+C:\Users\BlackRider\Documents\GitHub\ayd2_gtt_git\src\main\java\interaccion\clControlBusqueda.java
+C:\Users\BlackRider\Documents\GitHub\ayd2_gtt_git\src\main\java\interaccion\clControlDetalleViaje.java
+C:\Users\BlackRider\Documents\GitHub\ayd2_gtt_git\src\main\java\pojos\TblRol.java
+C:\Users\BlackRider\Documents\GitHub\ayd2_gtt_git\src\main\java\pojos\TblRuta.java
+C:\Users\BlackRider\Documents\GitHub\ayd2_gtt_git\src\main\java\interaccion\clControlViaje.java
+C:\Users\BlackRider\Documents\GitHub\ayd2_gtt_git\src\main\java\pojos\TblTransporte.java
+C:\Users\BlackRider\Documents\GitHub\ayd2_gtt_git\src\main\java\interaccion\HibernateUtil.java
+C:\Users\BlackRider\Documents\GitHub\ayd2_gtt_git\src\main\java\pojos\TblUsuario.java
+C:\Users\BlackRider\Documents\GitHub\ayd2_gtt_git\src\main\java\pojos\TblReservacion.java
+C:\Users\BlackRider\Documents\GitHub\ayd2_gtt_git\src\main\java\pojos\TblImagen.java
+C:\Users\BlackRider\Documents\GitHub\ayd2_gtt_git\src\main\java\pojos\TblActividad.java
+C:\Users\BlackRider\Documents\GitHub\ayd2_gtt_git\src\main\java\pojos\TblActividadDestinoId.java
+C:\Users\BlackRider\Documents\GitHub\ayd2_gtt_git\src\main\java\pojos\TblViaje.java
+C:\Users\BlackRider\Documents\GitHub\ayd2_gtt_git\src\main\java\pojos\TblActividadDestino.java
+C:\Users\BlackRider\Documents\GitHub\ayd2_gtt_git\src\main\java\pojos\TblDestino.java
